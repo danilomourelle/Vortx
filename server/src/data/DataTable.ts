@@ -80,7 +80,7 @@ export default class PriceTable {
     return `${previousLength - this.priceList.length} itens removidos`
   }
 
-  public getPrice(from: number, to: number): CallDetails {
+  public getPrice(from: number, to: number): CallDetails | undefined {
     const item = this.priceList.find(item => item.from === from && item.to === to)
 
     return item

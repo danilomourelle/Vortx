@@ -1,4 +1,4 @@
-import PriceTable from "../data/PriceTable";
+import PriceTable from "../data/DataTable";
 import { SimulationResponseData } from "../view/resultTable";
 
 
@@ -14,10 +14,10 @@ export default class SimulationService {
     if (values) {
       let withPlan: number = 0
       if (callDuration > plan) {
-        withPlan = Number.parseFloat(((callDuration - plan) * values.price * 1.1).toFixed(2))
+        withPlan = ((callDuration - plan) * values.price * 1.1)
       }
 
-      const withoutPlan = Number.parseFloat((callDuration * values.price).toFixed(2))
+      const withoutPlan = callDuration * values.price
 
       return {
         from,

@@ -15,8 +15,10 @@ export default class SimulationResponse {
     else {
 
       return {
-        ...response,
-        plan
+        result: {
+          ...response,
+          plan
+        }
       }
     }
   }

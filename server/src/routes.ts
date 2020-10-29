@@ -5,5 +5,5 @@ export const route = Router();
 
 const simulation = new SimulationController()
 
-route.get('/simulation', simulation.calculate)
-
+route.post('/simulation', simulation.calculate)
+route.get('/basic-details', simulation.basicDetails)
