@@ -1,0 +1,11 @@
+#results {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#results td,
+#results th {
+  border: 1px solid #888888;
+  text-align: center;
+  padding: 0.4rem;
+}
