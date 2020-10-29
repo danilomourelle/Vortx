@@ -49,7 +49,6 @@ export default class SimulationController {
 
 
     } catch (error) {
-      console.error(error)
       res.status(400).send(error)
     }
   }

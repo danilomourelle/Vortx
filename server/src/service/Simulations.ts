@@ -14,10 +14,10 @@ export default class SimulationService {
     if (values) {
       let withPlan: number = 0
       if (callDuration > plan) {
-        withPlan = ((callDuration - plan) * values.price * 1.1)
+        withPlan = Number(((callDuration - plan) * values.price * 1.1).toFixed(2))
       }
 
-      const withoutPlan = callDuration * values.price
+      const withoutPlan = Number((callDuration * values.price).toFixed(2))
 
       return {
         from,
