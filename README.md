@@ -27,6 +27,8 @@
 ### Linguagens
 
 * Typescript
+* CSS
+* HTML
 
 ### Tecnologias/Ferramentas
 
@@ -54,7 +56,7 @@
 - [Express](https://expressjs.com/)
 - [CORS](https://www.npmjs.com/package/cors)
 - [Yup](https://github.com/jquense/yup)
-- [jest](https://jestjs.io/)
+- [Jest](https://jestjs.io/)
 
 
 ### Como rodar a aplicação :arrow_forward:
@@ -63,6 +65,8 @@ No terminal, clone o projeto: (ou extraia os arquivos para um diretório conheci
 ```bash
 $ git clone https://github.com/danilomourelle/Provi-Backend.git
 ```
+
+#### Back-end
 Primeiro devemos rodar o Back-end. Para isso, navegue para dentro da pasta `server`
 ```bash
 $ cd /Diretório_do_Projeto/server
@@ -77,6 +81,7 @@ $ npm run dev
 ```
 Você poderá utilizar os endpoints através de um cliente HTTP (ex. [Postman](https://www.postman.com/product/api-client/)) tendo o endereço [localhost:5000](http:localhost:5000) como URL base para as requisições.
 
+#### Front-end
 Agora, vamos rodar o front-end. Em outro terminal, navegue para a pasta `web`
 ```bash
 $ cd /Diretório_do_Projeto/web
